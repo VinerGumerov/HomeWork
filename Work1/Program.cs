@@ -4,13 +4,21 @@
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
+*/ 
 
-Console.Writ("Input integer number 5 or 7: ");
-int num a = 5;
-int num b = 7;
-if (num a)
-   Console.WriteLine("Result min number is ");
-else (num b)
-   Console.WriteLine("Result max number is "); 
 
-   */
+Console.Write("Input first integer number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input second integer number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 < num2)
+{
+   Console.WriteLine("Result min number is " + num1);
+   Console.WriteLine("Result max number is " + num2);
+}
+else (num1! = 5 || num2! = 7)
+{
+   Console.WriteLine("Incorrect number ");
+}   
