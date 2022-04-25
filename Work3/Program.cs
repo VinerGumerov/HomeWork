@@ -38,7 +38,7 @@ Console.WriteLine("Input z2 cordinate: ");
 double z2 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write(Sqrt(x1,x2,y1,y2,z1,z2));
-
+*/
 // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 void Pal()
 {
@@ -52,7 +52,10 @@ void Pal()
   Console.WriteLine(num + "-> Это палиндром!");
   else
   Console.WriteLine(num + "-> Это не палиндром!");
+  if (num>9999 && num<99999)
+   Console.WriteLine(num);
+  else
+   Console.WriteLine("Enter a five-digit number!!!");
 }
 Pal();
 
-*/
