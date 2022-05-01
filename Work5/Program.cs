@@ -17,32 +17,32 @@ Console.WriteLine("num1^num2= " + Math.Pow(num1,num2));
 //и выдаёт сумму цифр в числе.
 
 
-void SumOfElments(int[] array)
-{
-    int count = 0;
-
-    for (int i = 0; i < array.Length; i++)
-    {
-        count+=array[i];
-    }
-    Console.WriteLine("SumOflements: "+count);
-}
-Console.WriteLine("Input number: ");
+Console.Write("Input number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-SumOfElments(num);
+int result = 0;
+while (num / 10 != 0)
+{
+    result += num % 10;
+    num /= 10;
+}
+result += num;
+Console.WriteLine(result);
 
 
 //Задача 3: 
 //Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
-int[] CreateRandomArray(int size)
+
+int[] array = new int[8];
+Console.Write("[");
+for (int i = 0; i < array.Length; i++)
 {
-    int[] array = new int [size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = new Random().Next(0,8);
-    }
-    return array;
+    array[i] = new Random().Next(1, 150);
 }
-CreateRandomArray(size);
-/*
+for (int j = 0; j < array.Length - 1; j++)
+{
+    Console.Write(array[j] + ", ");
+}
+Console.WriteLine(array[7] + "]");
+*/
+
