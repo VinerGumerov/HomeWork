@@ -40,7 +40,7 @@ for (int i = 0; i < 3; i++)
     }
     Console.WriteLine();
 }
-if (num1 < 0 || num1 >= 3 && num2<0 || num2 >= 4)
+if (num1 < 0 || num1 > 3 && num2<0 || num2 > 4)
     Console.WriteLine("The number does not belong to the array");
 else
     Console.WriteLine($"belongs to the array: {matrix[num1,num2]} ");
