@@ -4,9 +4,9 @@
 
 /*
 Console.Write("Input size matrix(vertical): ");
-int m = Convert.ToInt32(Console.ReadLine());
+int m = Convert.Toint32(Console.ReadLine());
 Console.Write("Input size matrix(horizontal): ");
-int n = Convert.ToInt32(Console.ReadLine());
+int n = Convert.Toint32(Console.ReadLine());
 
 int[,] matrix = new int[m,n];
 for (int i = 0; i < m; i++)
@@ -25,9 +25,9 @@ for (int i = 0; i < m; i++)
 //И возвращает значение этого элемента или же указание, что такого элемента нет.
 
 Console.WriteLine("Input number1: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.Toint32(Console.ReadLine());
 Console.WriteLine("Input number2: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.Toint32(Console.ReadLine());
 
 
 int[,] matrix = new int[3,4];
@@ -47,3 +47,27 @@ else
 
 */
 
+
+//Задача 52. 
+//Задайте двумерный массив из целых чисел. 
+//Найдите среднее арифметическое элементов в каждом столбце.
+
+int AverageArray (int[,] matr)
+{
+    int sum = 0;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            matr[i,j]=new Random().Next(10,20);
+            Console.Write(matr[i,j]+ " ");
+            sum += matr[i,j];
+        }
+        Console.WriteLine();   
+    }
+    return sum;
+}
+int[,] matrix = new int [3,4];
+int result = sum / matrix[3,4];
+Console.WriteLine($"Среднее Арифметическое:{result}");
+AverageArray(matrix);
